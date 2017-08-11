@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C出品</title>
+
+    <!--引入jQ-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <!--引入anmate-->
+    <link rel="stylesheet" href="animate/animate.min.css">
+    <!--引入googl字体库-->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <style>
+        div p {
+            /*设置字体*/
+            font-size: 33px;
+            font-family: 'Indie Flower', cursive;
+            /*让元素居中*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /*p元素高度的一半*/
+            margin-top: -48px;
+            /*p元素宽度的一半*/
+            margin-left: -120px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p id="tst">Welcome to FishC<br>www.fishc.com</p>
+</div>
+<script>
+    //添加jQ鼠标移入移出事件
+//    $("#tst").click(function () {
+//        $(this).addClass("animated zoomIn")
+//    }).mouseout(function () {
+//        $(this).removeClass("animated zoomIn")
+//    });
+
+//    $("#tst").click(function () {
+//        $(this).addClass("animated zoomInDown")
+//    }).mouseout(function () {
+//        $(this).removeClass("animated zoomInDown")
+//    });
+
+//    $("#tst").click(function () {
+//        $(this).addClass("animated zoomInLeft")
+//    }).mouseout(function () {
+//        $(this).removeClass("animated zoomInLeft")
+//    })
+
+//    $("#tst").click(function () {
+//        $(this).addClass("animated zoomInRight")
+//    }).mouseout(function () {
+//        $(this).removeClass("animated zoomInRight")
+//    });
+
+    $("#tst").click(function () {
+        $(this).addClass("animated zoomInUp")
+    }).mouseout(function () {
+        $(this).removeClass("animated zoomInUp")
+    });
+</script>
+</body>
+</html>
